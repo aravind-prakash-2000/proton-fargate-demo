@@ -16,7 +16,7 @@ tasks = [
 ]
 @app.route('/')
 def index():
-    return "welcome to proton demo - updated!!"
+    return "welcome to proton demo!!"
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
